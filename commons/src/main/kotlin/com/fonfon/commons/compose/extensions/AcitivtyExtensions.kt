@@ -55,12 +55,8 @@ fun ComponentActivity.appLaunchedCompose(
     }
 
     baseConfig.appRunCount++
-
-
     if (baseConfig.appRunCount % 10 == 0 && !baseConfig.wasAppRated) {
-        if (!resources.getBoolean(R.bool.hide_google_relations)) {
-            showRateUsDialog()
-        }
+       showRateUsDialog()
     }
 }
 
